@@ -1,0 +1,22 @@
+img{
+    margin-left: 40%;
+    width: 20%;
+    
+}
+#google{
+    display: flex;
+    border-radius:2px ;
+    border: 1px solid black;
+    width: 350px;
+   margin:auto;
+}
+#google div:nth-child(2){
+margin-left: 10px;
+}
+form{
+    text-align: center;
+    font-size: 30px;
+}
+#email{
+   padding: 10px;
+}
