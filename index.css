@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     background-color: rgb(226, 242, 240);
     text-align: center;
@@ -18,13 +23,13 @@ body{
 font-size: 20px;
 }
 .nave button{
-   font-size: 20px;
-   margin: 4px;
-   background-color: rgb(255, 255, 255);
-   border: 0ch;
-   color: rgb(77, 71, 71);
-
-}
+    font-size: 20px;
+    margin: 4px;
+    background-color: rgb(255, 255, 255);
+    border: 0ch;
+    color: rgb(77, 71, 71);
+ 
+ }
 .nave>img{
     margin-top: 10px;
 }
@@ -335,4 +340,128 @@ left: 200px;
 #perfect{
     font-size: 30px;
  
+}
+.over{
+    width: auto;
+    height: 100vh;
+    background-color: rgb(0, 97, 182);
+    position: fixed;
+    z-index: 11;
+    opacity: 0;
+    transition: 10s;
+}   
+ .login{
+    background-color: aliceblue;
+  padding: 20px;
+  width: 500px;
+ position: absolute;
+ left: 50%;
+ top: -50%;
+ transition: 1s;
+ height: 600px;
+ font-size: 20px;
+ opacity: 0;
+
+  
+ transform: translate(-50%,-50%);
+}
+form button{
+    background-color: white;
+    padding: 10px 10px;
+    color: rgb(11, 2, 2);
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgb(216, 216, 225);
+    
+}
+#spn{
+    position: absolute;
+    right: 0px;
+    width: 30px;
+    padding: 5px;
+    background-color: rgb(255, 0, 0);
+    cursor:pointer;
+
+}
+.overshow{
+opacity: 1;
+}
+.loginshow{
+opacity: 1;
+}
+
+#google{
+    display: flex;
+    border-radius:2px ;
+    border: 1px solid black;
+    width: 350px;
+   margin:auto;
+}
+#google div:nth-child(2){
+margin-left: 10px;
+}
+form{
+    text-align: center;
+    font-size: 30px;
+}
+#email{
+   padding: 10px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.page{
+    width: 400px;
+    height: auto;
+    background-color: rgb(254, 254, 254);
+    position: absolute;
+    left: auto;
+    top: auto;
+    transition: 1s;
+   
+   opacity: 0;
+   border-radius: 10px;
+   z-index: 1;
+   text-align: left;
+   margin-top: 60px;
+   border: 1px solid gray;
+   
+   
+    
+}
+.page div:nth-child(1){
+    width: 170px;
+}
+.page>div>a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    
+}
+.page>div>a:hover{
+ background-color: rgb(214, 109, 109);
+    
+}
+.page>div>p{
+color: #252020;
+font-size: 10px;
+color: #252020;
+    
+}
+.page  div:nth-child(2){
+margin-top:150px;
+}
+.pageshow{
+    opacity: 1;
+}
+#sss{
+margin-left: 370px;
+background-color: rgb(255, 17, 17);
+padding: 0px 2px 2px 2px;
+cursor: pointer;
+font-size: 20px;
+}
+.logi{
+    cursor: pointer;
 }

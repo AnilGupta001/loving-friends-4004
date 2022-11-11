@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form input{
+            padding: 10px;
+            padding-left: 30px;
+            font-size: 20px;
+        }
+        #submit a{
+            background-color: rgb(0, 0, 243);
+          
+            font-size: 30px;
+            color: rgb(247, 248, 255);
+            text-decoration: none;    
+        }
+        #submit{
+            background-color: blue; 
+             border-radius: 20px;
+             font-size: 30px;
+             margin-top: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="C:\Users\Anil Gupta\Downloads\Airtable (1).png" alt="">
+    <form> 
+        <h1>Create your free account</h1>
+        <h1>Full Name</h1>
+        <input id="name" type="name" placeholder="name">
+        <h1>Password</h1>
+        <input id="pass" type="password" placeholder="*********">
+        <hr>
+        <button id="submit">Submit</a></button>
+    </form>
+
+  
+</body>
+</html>
+<script>
+   
+    
+    document.querySelector("#submit").addEventListener("click",function(evet){
+    event.preventDefault();
+     let x=document.querySelector("#name").value;
+     localStorage.setItem("name",JSON.stringify(x))
+     let pas=document.querySelector("#pass").value;
+     localStorage.setItem("pass",JSON.stringify(pas))
+     if(x!="" && pas!=""){
+     window.location.href="AirtableHome.html"; 
+    }
+    }) 
+  
+    
+    
+</script>
