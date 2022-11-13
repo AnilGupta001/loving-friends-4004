@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <style>
+.over{
+        width: auto;
+        height: 100vh;
+        background-color: rgb(0, 97, 182);
+        position: fixed;
+        transition: 1s;
+    }   
+     .login{
+        margin-top: 400px;
+        background-color: aliceblue;
+      padding: 20px;
+      width: 500px;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transition: 1s;
+     height: 600px;
+     font-size: 20px;
+     opacity: 1;
+    transform: translate(-50%,-50%);
+    }
+    form button{
+        background-color: white;
+        padding: 10px 10px;
+        color: rgb(11, 2, 2);
+        border-radius: 5px;
+        font-size: 20px;
+        background-color: rgb(216, 216, 225);
+        
+    }
+    .login span{
+        position: absolute;
+        right: 0px;
+        width: 30px;
+        background-color: rgb(248, 0, 0);
+        cursor: pointer;
+    cursor: pointer;
+    }
+    .overshow{
+    opacity: 1;
+    }
+    .loginshow{
+    top: 50px;
+    }
+    
+    #google{
+        display: flex;
+        border-radius:2px ;
+        border: 1px solid black;
+        width: 350px;
+       margin:auto;
+    }
+    #google div:nth-child(2){
+    margin-left: 10px;
+    }
+    form{
+        text-align: center;
+        font-size: 30px;
+    }
+    #email{
+       padding: 10px;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+   </style>
+
+
+</head>
+<body>
+    <div class="over"></div>
+    <div class="login">
+        <span>&times;</span>
+        <img src="C:\Users\Anil Gupta\Downloads\Airtable (1).png" alt="">
+        <form>
+            <div>
+                <div>
+    <h3>Create your free account</h3>
+    <a href="signin.html"></a>
+    <h3>Work Email</h3>
+    <input id="email" type="email" placeholder="📨 name@company.com">
+    <h4>Password</h4>
+    <input id="pass" type="password" placeholder="password" >
+    <br>
+    <button id="sub">Submit</button>
+    </div>
+    <hr>
+    <p>or</p>
+    
+    <div>
+    <button>Continue With <b>Single Sign On</b></button>
+    </div>
+    <div id="google">
+    <div>
+    <img style="width: 20px;" src="https://juststickers.in/wp-content/uploads/2019/07/google-favicon-326x326.png" alt="">
+    </div>
+    <div>
+        <b>Continue with Google</b>
+    </div>
+    </div>
+    </div>
+    <p>Continue with apple ID</p>
+    <p>By creating an account,you agree to the Terms of Servise ans Privacy Police.</p>
+
+    </form>
+    <a href="signin.html">Create new account</a>
+    </div>
+
+
+</body>
+</html>
+<script>  
+document.querySelector("#sub").addEventListener("click",(event)=>{
+     
+let emai=document.querySelector("#email").value;
+let fass=document.querySelector("#pass").value;
+  console.log(emai,fass)
+    if(emai==localStorage.getItem("email")){
+    if(fass==localStorage.getItem("pass")){
+    
+        window.location.href="AirtableHome.html"
+        console.log(fass,emai)
+    }
+}
+
+    else{  
+    
+    alert("please write your rigth email or pass || or || Create New Account")
+}
+});
+
+</script>

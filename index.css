@@ -28,11 +28,8 @@ body{
 #nav div:nth-child(2){
     text-align: right;
     width: 700px;
-   
-   
-    margin-right: 40px;
-  
-}
+     margin-right: 40px;
+    }
 .nave{
 font-size: 20px;
 }
@@ -43,12 +40,13 @@ font-size: 20px;
     color: rgb(77, 71, 71);
     font-size: 20px;
     margin: 4px;
+    cursor:pointer
 }
 .nave>img{
   margin-right: 20px;
 }
 #contect{
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 5px;
   
     }
@@ -72,22 +70,17 @@ font-size: 20px;
 width: 400px;
 height:auto;
 }
-#mid-2 {
-  
- display: grid;
+#mid-2{
+    display: grid;
  grid-template-columns: repeat(6,200px);
  padding: 40px;
  text-align: center;
  align-items: center;
 margin-left: 80px;
-}
-#solution{
-
-    height: 250px;
+}#solution{
+     height: 250px;
     background-color: white;
-    
-
-}
+    }
 #solution div:nth-child(1){
     text-align: center;
     width: 600px;
@@ -96,10 +89,7 @@ margin-left: 80px;
     font-size: 30px;
     align-items: center;
     margin-left: 480px;
-
-}
-  
-#new{
+}#new{
 border: 1px solid rgb(47, 1, 96);
 background-color: rgb(47, 1, 96);
 border-radius: 10px;
@@ -157,26 +147,24 @@ gap: 600px;
 #bring{
     display: grid;
     grid-template-columns: repeat(1,auto);
-}
-#started{
+}#started{
     display: flex;
     justify-content: space-evenly;
-}
-.vide{
+}.vide{
     margin: auto;
     height: 450px;
 
-}
-#quick{
+}#quick{
     display: grid;
-    grid-template-columns: repeat(2,500px);
-     align-items: center;
-}
-#quick div{
-    text-align: center;
-}
-
-#lowertab{
+    grid-template-columns: repeat(2,50%);
+    align-items: center;
+   
+}#quick div:nth-child(1){
+   
+    align-items: center;
+  
+    text-align: right;
+}#lowertab{
     display: flex;
  background-color: rgb(255, 255, 255);
     justify-content: center;
@@ -232,11 +220,16 @@ gap: 600px;
 }
 #em{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,7fr);
     align-items: center;
     text-align: center;
-   
-}
+    height: 100px;
+    font-size: 20px;
+   }
+   #em button{
+    color: blue;
+    font-size: 20px;
+   }
 #tab{
     background-color: rgb(243, 239, 231);
     display: grid;
@@ -355,6 +348,21 @@ left: 200px;
     font-size: 30px;
  
 }
+#bottom button{
+    color: rgb(221, 206, 206);
+    font-size: 20px;
+    border:0px;
+    background-color: rgb(29, 0, 245);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+#bottom>button>a{
+color: white;
+ text-decoration: none;
+}
 .over{
     width: auto;
     height: 100vh;
@@ -385,14 +393,13 @@ form button{
     background-color: rgb(216, 216, 225);
     
 }
-#spn{
+.login span{
     position: absolute;
     right: 0px;
     width: 30px;
-    padding: 5px;
-    background-color: rgb(255, 0, 0);
-    cursor:pointer;
-
+    background-color: rgb(248, 0, 0);
+    cursor: pointer;
+cursor: pointer;
 }
 .overshow{
 opacity: 1;
@@ -421,8 +428,7 @@ form{
 *{
     margin: 0px;
     padding: 0px;
-}
-.page{
+}.page{
     width: 400px;
     height: auto;
     background-color: rgb(254, 254, 254);
@@ -430,18 +436,11 @@ form{
     left: auto;
     top: auto;
     transition: 1s;
-   
-   opacity: 0;
-   border-radius: 10px;
-   z-index: 1;
+    opacity: 0;
+    z-index: 1;
    text-align: left;
    margin-top: 60px;
-   border: 1px solid gray;
-   
-   
-    
-}
-.page div:nth-child(1){
+  }.page div:nth-child(1){
     width: 170px;
 }
 .page>div>a{
@@ -465,8 +464,9 @@ margin-top:150px;
 }
 .pageshow{
     opacity: 1;
+
 }
-#sss{
+.page>div>span{
 margin-left: 370px;
 background-color: rgb(255, 17, 17);
 padding: 0px 2px 2px 2px;
@@ -494,6 +494,8 @@ font-size: 20px;
    border-radius: 10px;
    z-index: 1;
    text-align: left;
+
+
    margin-top: 60px;
    border: 1px solid gray;
    
@@ -673,32 +675,7 @@ font-size: 20px;
     }
     #quick div{
         text-align: center;
-    }
-    
-    #lowertab{
-        display: flex;
-     background-color: rgb(255, 255, 255);
-        justify-content: center;
-        
-    }
-    #lowertab div:nth-child(2){
-       width: 240px;
-      
-        justify-content: center;
-        margin-right: 500px;
-        
-    }
-    #lowertab div:nth-child(1){
-        width: 600px;
-        justify-content: center;
-         margin-left: 200px;
-     }
-    .lower{
-        width: 50%;
-        margin-left: 200px;
-        height: 420px;
-    }
-    #bottom{
+    }#bottom{
         text-align: center;
         width: 400px;
         height: auto;
@@ -849,55 +826,6 @@ font-size: 20px;
         color: rgb(5, 5, 5);
         background-color: rgb(255, 255, 255);
         width: 150px;
-    }
-    #perfect{
-        font-size: 30px;
-     
-    }
-    .over{
-        width: auto;
-        height: 100vh;
-        background-color: rgb(0, 97, 182);
-        position: fixed;
-        transition: 1s;
-    }   
-     .login{
-        margin-top: 400px;
-        background-color: aliceblue;
-      padding: 20px;
-      width: 500px;
-     position: absolute;
-     left: 50%;
-     top: -50%;
-     transition: 1s;
-     height: 600px;
-     font-size: 20px;
-     opacity: 1;
-    transform: translate(-50%,-50%);
-    }
-    form button{
-        background-color: white;
-        padding: 10px 10px;
-        color: rgb(11, 2, 2);
-        border-radius: 5px;
-        font-size: 20px;
-        background-color: rgb(216, 216, 225);
-        
-    }
-    #spn{
-        position: absolute;
-        right: 0px;
-        width: 30px;
-        padding: 5px;
-        background-color: rgb(255, 0, 0);
-        cursor:pointer;
-    
-    }
-    .overshow{
-    opacity: 1;
-    }
-    .loginshow{
-    top: 50px;
     }
     
     #google{
