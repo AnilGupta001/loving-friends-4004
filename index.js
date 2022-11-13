@@ -28,8 +28,8 @@ document.querySelector("#zzz").addEventListener("click",()=>{
 let emai=document.querySelector("#email").value;
 let fass=document.querySelector("#pass").value;
 document.querySelector("#sub").addEventListener("click",()=>{
-    if(emai==JSON.parse(email)){
-    if(fass==JSON.parse(pass)){
+    if(emai==localStorage.getItem("email")){
+    if(fass==localStorage.getItem("pass")){
         window.location.href="AirtableHome.html"
     }
 }
