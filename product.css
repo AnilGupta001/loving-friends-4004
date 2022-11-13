@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(226, 242, 240);
+    text-align: center;
+    position: sticky;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#nav{
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    display: flex;
+   justify-content: space-around;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    position: fixed;
+    width: 1550px;
+}
+#nav div:nth-child(1){
+    text-align: left;
+  
+}
+#nav div:nth-child(2){
+    text-align: right;
+    width: 700px;
+     margin-right: 40px;
+    }
+.nave{
+font-size: 20px;
+}
+.nave button{
+    font-size: 15;
+    background-color: rgb(255, 255, 255);
+    border: 0ch;
+    color: rgb(77, 71, 71);
+    font-size: 20px;
+    margin: 4px;
+    cursor:pointer
+}
+.nave>img{
+  margin-right: 20px;
+}
+#contect{
+    border: 1px solid black;
+    border-radius: 5px;
+  
+    }
+    #sign{
+        background-color: blue;
+        border-radius: 5px;
+        color: white;
+        border: 0px;
+        font-size: 20px;
+    }
+    #hm{
+        margin-top: 70px;
+    }
+    .Home{
+        height: 50px;
+        width: auto;
+        display: flex;
+    }
+    .Home button{
+        cursor: pointer;
+        font-size: 20px;
+        border: 0px;
+        background-color: rgb(215, 234, 234);
+    }
+    .plate{
+        display: flex;
+        height: auto;
+    }
+    .plate div:nth-child(1){
+        width: 50%;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        font-size: 35px;
+    }
+    .plate div:nth-child(1)>button{
+        background-color: rgb(4, 46, 120);
+        border: 0px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .plate div:nth-child(1)>button>a{
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    #fe{
+        font-size: 30px;
+        color: gray;
+        text-align: left;
+    }
+    #mid{
+        display: flex;
+        height: 60px;
+        justify-content: space-around;
+        
+    }
+    #mid div{
+    width: 300px;
+        
+    }
+    #ctf{
+        width: 70%;
+        height: auto;
+    }
+    #mid-2{
+        display: flex;
+      
+        margin-top: 60px;
+    }
+    #mid-2 div:nth-child(1){
+        
+        margin: auto;
+        font-size: 25px;
+        transform: 2s;
+       width: auto;
+    }
+    #mid-2 div:nth-child(1)>h4:hover{
+    background-color: wheat;
+    }
+    #imh{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        margin-left: 40px;
+    }
+    #fit{
+        width: auto;
+        height: auto;
+        margin: auto;
+        
+    }
+    #fit div:nth-child(1){
+        width: auto;
+        height: 100px;
+       margin: auto;
+        
+    }
