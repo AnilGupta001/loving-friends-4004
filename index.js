@@ -30,7 +30,7 @@ let fass=document.querySelector("#pass").value;
 document.querySelector("#sub").addEventListener("click",()=>{
     if(emai==localStorage.getItem("email")){
     if(fass==localStorage.getItem("pass")){
-        window.location.href="AirtableHome.html"
+        window.location.href="index.html"
     }
 }
 else{
